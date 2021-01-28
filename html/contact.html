@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Página de Contacto</h1>
+      <h2>Esta es la página de contacto</h2>
+    </header>
+
+    <main>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./contact.html" class="active">Contacto</a>
+      </nav>
+
+      <aside>
+        <img
+          src="../dee7be59143d99bfbf7755635642a16d--scary-movies-horror-movies.jpg"
+          alt="foto-perfil"
+          height="150px"
+        />
+        <p>Íñigo Montoya</p>
+        <p>34 años</p>
+        <p>Paradise City</p>
+
+        <a href="https://facebook.com"
+          ><img
+            src="../assets/icons/facebook.svg"
+            alt="logo-facebook"
+            height="30px"
+        /></a>
+        <a href="https://instagram.com"
+          ><img
+            src="../assets/icons/instagram.svg"
+            alt="logo-instagram"
+            height="30px"
+        /></a>
+        <a href="https://twitter.com"
+          ><img
+            src="../assets/icons/twitter.svg"
+            alt="logo-twitter"
+            height="30px"
+        /></a>
+      </aside>
+      <h1>Formulario</h1>
+
+      <form method="GET" action="">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <div>
+            <label>
+              Nombre:
+              <input
+                type="text"
+                name="Nombre"
+                required="true"
+                autofocus="true"
+              />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Email:
+              <input type="email" name="Email" required="true" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Teléfono:
+              <input type="tel" name="Teléfono" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              URL:
+              <input
+                type="url"
+                name="Url"
+                placeholder="Escribe la URL de tu página personal"
+              />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Fechas y Números</legend>
+          <div>
+            <label>
+              Fecha:
+              <input type="date" name="Fecha" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Tiempo:
+              <input type="time" name="Tiempo" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Fecha y hora:
+              <input type="datetime" name="Fecha-y-hora" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Mes:
+              <input type="month" name="Mes" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Semana:
+              <input type="week" name="Semana" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Número:
+              <input type="number" name="Numero" min="-10" max="10" />
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Otros</legend>
+          <div>
+            <label>
+              Término de búsqueda:
+              <input type="search" name="Busqueda" />
+            </label>
+          </div>
+
+          <div>
+            <label>
+              Color favorito:
+              <input type="color" name="Color" />
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Textarea</legend>
+          <textarea
+            name="Textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+
+        <div>
+          <input type="submit" value="Enviar" id="vaUnCaracolYDerrapa" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <a href="https://google.com">Google</a>
+      <a href="https://filmaffinity.com">Filmaffinity</a>
+      <a href="https://reddit.com">Reddit</a>
+    </footer>
+  </body>
+</html>

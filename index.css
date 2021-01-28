@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url("assets/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("assets/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("assets/Roboto-Regular.ttf") format("truetype");
+}
+
+body {
+  background-color: steelblue;
+  font-family: "Roboto";
+  margin: 0px;
+}
+
+/* Header styles */
+header {
+  background-color: black;
+  color: white;
+  height: auto;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.4em;
+  font-weight: 900;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+header h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+/* Main styles */
+form {
+  float: inline-end;
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
+form > input,
+form > textarea {
+  background-color: grey;
+  border: none;
+  width: 100%;
+}
+
+form > div > input {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+}
+
+form > div {
+  padding: 20px 0px 5px 0px;
+}
+
+form div label input:required {
+  border-color: red;
+}
+
+main {
+  font-weight: 500;
+  padding: 0px 30px;
+}
+
+main aside {
+  float: left;
+  height: 80vh;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+main aside img {
+  border-radius: 50px;
+}
+
+main nav {
+  font-size: xx-large;
+  text-align: center;
+}
+
+main nav a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main nav a:hover {
+  color: aqua;
+}
+
+main nav a.active {
+  background-color: black;
+  color: white;
+}
+
+main section {
+  margin-bottom: 5vh;
+  margin-left: 20vh;
+}
+
+main section ul li.food:hover {
+  list-style-type: "😋";
+}
+
+main section ul li.songs:hover {
+  list-style-type: "🎷";
+}
+
+main section ul li.movies:hover {
+  list-style-type: "🎥";
+}
+
+main section ul li.animals:hover {
+  list-style-type: "😻";
+}
+
+main section ul ul {
+  margin-block-end: 1em;
+}
+
+main section table thead {
+  background-color: black;
+  color: white;
+
+  /* No me deja ponerlo en mi negrita ni con important */
+  font-weight: 900 !important;
+}
+
+main section table tbody tr td.head {
+  background-color: black;
+  color: white;
+  font-weight: 900;
+}
+
+main section table tbody tr:nth-child(2n + 1) {
+  background-color: grey;
+}
+
+/* Footer styles */
+footer {
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: lightgrey;
+}
+
+#vaUnCaracolYDerrapa {
+  border-radius: 5px;
+  padding: 30px, 10px;
+  font-weight: 900;
+  font-size: large;
+
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  box-shadow: 0 9px #999;
+}
+
+#vaUnCaracolYDerrapa:hover {
+  background-color: #3e8e41;
+}
+
+#vaUnCaracolYDerrapa:active {
+  animation-name: clickerino;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+}
+
+@keyframes clickerino {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.78);
+  }
+}
